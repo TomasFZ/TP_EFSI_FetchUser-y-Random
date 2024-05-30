@@ -1,12 +1,10 @@
-import usersList from './components/usersList.jsx';
+import UsersList from './components/usersList.jsx';
 import './App.css';
 
 function App() {
   return (   
-      <usersList/>
-      <>
-      <div className="model-usuario"></div>
-      </>
+      <UsersList/>
+      
   );
 }
 
