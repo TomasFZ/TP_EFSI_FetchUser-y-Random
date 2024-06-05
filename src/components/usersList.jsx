@@ -21,11 +21,11 @@ const UsersList = () => {
   };
 
   let modal = null;
-if (selectedUser !== null) {
+if (selectedUser !== null) { //Yo agregarÃ­a para ver la foto de la persona arriba del texto a la hora de abrir el modal :) - Temporaly 
   modal = (
     <div className="modal" onClick={cerrarModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <h2>{selectedUser.name.first + " " + selectedUser.name.last}</h2>
+        <h2 className="blocc">{selectedUser.name.first + " " + selectedUser.name.last}</h2>
         <p>Email: {selectedUser.email}</p>
         <p>Phone: {selectedUser.phone}</p>
         <p>Location: {selectedUser.location.city}, {selectedUser.location.country}</p>
@@ -36,7 +36,7 @@ if (selectedUser !== null) {
 
 return (
   <div>
-    <h1>Listado: </h1>
+    <h1 className="paddedText">Listado: </h1>
     <ul className="user-list">
       {users.map((user, index) => (
         <li key={index} className="user-card" onClick={() => abrirModal(user)}>

@@ -2,8 +2,21 @@
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.blocc{
+  text-align: center;
+  font-size: 3em;
+  padding-top: .63285776728%;
+  padding-bottom: .63285776728%;
+}
+
+.paddedText {
+  padding-left: 1%;
+  padding-bottom: 1.365475685856%;
 }
 
 .user-card {
@@ -11,8 +24,13 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
+  padding-top: .63285776728%;
+  padding-bottom: .63285776728%;
+  padding-left: .5983576748873235%;
+  padding-right: .5983576748873235%;
   cursor: pointer;
-
+  background-color: rgb(83, 83, 233);
+  color: white;
 }
 
 .user-card:hover {
@@ -30,7 +48,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  
 }
 
 .modal-content {
@@ -41,6 +59,8 @@
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
+  
+  
 }
 
 .close {
