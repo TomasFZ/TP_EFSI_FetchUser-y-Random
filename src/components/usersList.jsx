@@ -27,8 +27,8 @@ if (selectedUser !== null) { //Yo agregarÃ­a para ver la foto de la persona ar
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h2 className="blocc">{selectedUser.name.first + " " + selectedUser.name.last}</h2>
         <p>Email: {selectedUser.email}</p>
-        <p>Phone: {selectedUser.phone}</p>
-        <p>Location: {selectedUser.location.city}, {selectedUser.location.country}</p>
+        <p>Telefono: {selectedUser.phone}</p>
+        <p>Localidad: {selectedUser.location.city}, {selectedUser.location.country}</p>
       </div>
     </div>
   );
